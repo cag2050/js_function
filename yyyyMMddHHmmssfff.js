@@ -1,0 +1,10 @@
+let myDate = new Date()
+let yyyy = myDate.getFullYear()        //获取当前年份(4位)
+let MM = myDate.getMonth() + 1 < 10 ? '0' + (myDate.getMonth() + 1) : myDate.getMonth() + 1      //获取当前月份(0-11,0代表1月)
+let dd = myDate.getDate() < 10 ? '0' + myDate.getDate() : myDate.getDate()        //获取当前日(1-31)
+let HH = myDate.getHours() < 10 ? '0' + myDate.getHours() : myDate.getHours()       //获取当前小时数(0-23)
+let mm = myDate.getMinutes() < 10 ? '0' + myDate.getMinutes() : myDate.getMinutes()     //获取当前分钟数(0-59)
+let ss = myDate.getSeconds() < 10 ? '0' + myDate.getSeconds() : myDate.getSeconds()     //获取当前秒数(0-59)
+let fff = myDate.getMilliseconds() < 10 ? '0' + myDate.getMilliseconds() : myDate.getMilliseconds()    //获取当前毫秒数(0-999)
+let yyyyMMddHHmmssfff = yyyy + MM + dd + '_' + HH + mm + ss + fff
+console.log(yyyyMMddHHmmssfff)
