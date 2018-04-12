@@ -9,6 +9,7 @@ let arr = [
 ]
 
 let newArr = arr.map((item, index, thisArr) => {
+    console.log('aaa')
     return item.key = item.key + '111'
 })
 
