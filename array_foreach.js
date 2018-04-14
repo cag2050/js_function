@@ -7,5 +7,4 @@ function compare(currentValue) {
     }
 }
 array.forEach(compare)
-console.log(array.forEach(compare))
 console.log(array)
