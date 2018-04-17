@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [3, '4', '1', 1, '3', 'c', 'b', 'a', '汉字', '你', '啊']
+
+    arr.sort(function (a, b) {
+        // return a.toLocaleString().localeCompare(b.toLocaleString(), 'zh')
+        return a.toString().localeCompare(b.toString(), 'zh')
+    })
+
+    console.log(arr)
+</script>
+
+</body>
+</html>

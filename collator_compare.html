@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arr = ['3', 3, 'b', 'a', 1, 2, '1', '啊', '厉害', '百'];
+    var collator = new Intl.Collator('zh');
+    arr.sort(collator.compare);
+    console.log(arr)
+</script>
+</body>
+</html>
