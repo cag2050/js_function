@@ -9,9 +9,9 @@ let arr = [
 ]
 
 let newArr = arr.map((item, index, thisArr) => {
-    if (item.key === 'age') {
-        return item.value
-    }
+    // if (item.key === 'age') {
+        return item.key
+    // }
 })
 
 console.log(arr)
