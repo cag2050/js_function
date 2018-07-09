@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function getUrlParams(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) {
+                return decodeURIComponent(r[2]);
+            }
+            return null;
+        }
+
+        function replaceParamVal(paramName, replaceWith) {
+            var oldUrl = this.location.href.toString();
+            var re = eval('/(' + paramName + '=)([^&]*)/gi');
+            var newUrl = oldUrl.replace(re, paramName + '=' + replaceWith);
+            this.location = newUrl;
+            window.location.href = newUrl
+        }
+    </script>
+</head>
+<body>
+<script>
+    // document.write(getUrlParams('_ijt'))
+    replaceParamVal('_ijt', 'aaa')
+</script>
+
+</body>
+</html>
