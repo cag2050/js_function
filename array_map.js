@@ -10,7 +10,7 @@ let arr = [
 
 let newArr = arr.map((item, index, thisArr) => {
     // if (item.key === 'age') {
-        return item.key
+        return `<text>${item.key}</text>`
     // }
 })
 
